@@ -1,0 +1,43 @@
+//API 1 GET Method Movies
+GET http://localhost:5000/movies/
+###
+
+
+//API 2 POST Method Movies
+POST http://localhost:5000/movies/
+Content-Type: application/json
+
+{
+    "directorId": 6,
+    "movieName": "Jurassic Park",
+    "leadActor": "Jeff Goldblum"
+}
+###
+
+//API 3 GET Method using Moive ID
+GET http://localhost:5000/movies/56
+###
+
+
+//API 4 PUT Method - Movie
+PUT http://localhost:5000/movies/50/
+Content-Type: application/json
+
+{
+    "directorId": 24,
+    "movieName": "Thor",
+    "leadActor": "Christopher Hemsworth"
+}
+###
+
+//API 5 DELETE Method - Movies
+DELETE http://localhost:5000/movies/49
+###
+
+//API 6 GET Method - Director
+GET http://localhost:5000/directors/
+###
+
+//API 7 GET Method - Movie using Direcrtor ID
+GET http://localhost:5000/directors/1/movies/
+###
